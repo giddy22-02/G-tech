@@ -1,0 +1,260 @@
+/*---------------------------------
+Name:Main.css
+Version:1.0
+Author:Gideon Kiplangat
+-----------------------------------
+Table of Contents
+       01. Navbar
+       02. Slider
+       03. About Us
+       04. Services
+       05. Some Facts
+       06. Portfolio
+       07. Testimonials
+       08. Blog
+       09. Contact
+       10. Footer
+*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #152238;
+  --secondary-color: #f9a826;
+  --general-color: #ffffff;
+}
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.navbar {
+  padding: 20px;
+  background: var(--primary-color);
+}
+.navbar .nav-item {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.navbar .nav-item .nav-link {
+  color: var(--secondary-color);
+}
+.navbar .nav-item .active,
+.navbar .nav-item .nav-link:hover {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+}
+/*---Navigation Menu---*/
+.nav-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul.navbar-nav li.profile-dropdown {
+  margin-left: auto;
+  margin-right: 50px;
+}
+/*========================
+slider
+=========================*/
+.slider {
+  background: url("../images/bg.PNG");
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+.slider h3 {
+  font-size: 3rem;
+  color: var(--general-color);
+  margin-top: 15rem;
+  margin-left: 5rem;
+  font-weight: 700;
+}
+/*=================================
+About Us Page
+=================================*/
+.history {
+  background: url(../images/history-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+
+.history .container .row img {
+  border-radius: 10px;
+}
+.history .container .row h2 {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+/*----------------------------
+fonders
+------------------------------*/
+.founders .container .row img {
+  border-radius: 50%;
+}
+/*=================================
+Serrvices
+===================================*/
+.services {
+  background: var(--general-color);
+}
+.services h2 {
+  color: var(--secondary-color);
+  font-weight: 500;
+}
+.services .container .row .box i {
+  color: var(--secondary-color);
+  font-size: 4rem;
+}
+.services .container .row .box h3 {
+  color: var(--secondary-color);
+  font-weight: 500;
+}
+.services .container .row .box p {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+/*=====================================
+Contact us Page
+======================================*/
+.contact-slider{
+  background:var(--general-color);
+}
+.contact-slider .container .row h3{
+  color: var(--secondary-color);
+  margin-top: 12px;
+  font-weight: 600;
+}
+.contact-slider .container .row p{
+  color: var(--primary-color);
+  margin: 12px;
+  font-weight: 600;
+}
+/*-------------------
+contact form
+--------------------*/
+.contact-form{
+  margin-top: 0;
+  background: var(--secondary-color);
+}
+.contact-form .container h3{
+  color: var(--primary-color);
+  font-weight: 600;
+}
+.contact-form .container .row .form-control{
+  border-radius: 15px;
+}
+.contact-form .container .row input :focus{
+  border: none;
+}
+.contact-form .container .row .form-control::placeholder{
+  color: var(--primary-color);
+}
+.contact-form .container .row .container{
+  margin-top: 2rem;
+}
+.contact-form .container .row .container i{
+  font-size:2rem;
+  margin:1rem;
+  color: var(--primary-color);
+}
+.contact-form .container .row .container p{
+  color: var(--primary-color);
+  font-weight: 600;
+}
+/*==================================
+Photo-Gallery Page
+===================================*/
+.gallery{
+  background: var(--secondary-color);
+  padding: 80px 0;
+}
+.gallery img{
+  max-width: 100%;
+}
+
+/*======================
+Footer
+========================*/
+.footer {
+  background: var(--primary-color);
+  padding: 1rem;
+  width: 100%;
+}
+
+.footer .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer .row .box {
+  flex: 1 1 2rem;
+  margin: 1rem;
+}
+
+.footer .row .box h3 {
+  font-size: 1.4rem;
+  color: var(--general-color);
+  padding: 0.4rem 0;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.footer .row .box p {
+  font-size: 1.1rem;
+  color: var(--secondary-color);
+}
+
+.footer .row .box a {
+  font-size: 1.1rem;
+  color: var(--secondary-color);
+  padding: 0.4rem 0;
+  display: block;
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 10px;
+}
+.footer .box-container .box a:hover {
+  color: var(--yellow);
+}
+
+.footer .row .box p i,
+.footer .row .box a i {
+  padding-right: 0.8rem;
+  color: var(--secondary-color);
+}
+
+.footer .credit {
+  font-size: 18px;
+  text-align: center;
+  border-top: 0.2rem solid var(--general-color);
+  padding: 2rem 1rem;
+  font-weight: normal;
+  letter-spacing: 0.1rem;
+  color: var(--secondary-color);
+}
+
+.footer .credit a {
+  color: var(--general-color);
+}
+/*===================================
+Media
+=====================================*/
+@media (max-width: 575.99px) {
+  .slider h3 {
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    width: 80%;
+    font-weight: 700;
+    margin-left: 2rem;
+  }
+  .footer .row .box {
+    width: 100%;
+  }
+}
