@@ -5,15 +5,13 @@ Author:Gideon Kiplangat
 -----------------------------------
 Table of Contents
        01. Navbar
-       02. Slider
-       03. About Us
-       04. Services
-       05. Some Facts
-       06. Portfolio
-       07. Testimonials
-       08. Blog
-       09. Contact
-       10. Footer
+       02. Home Slider
+       03. About Us page
+       04. Services Page
+       05. Photo-Gallery Page
+       06. Contact Us page
+       07. Footer Section
+       08. Media
 */
 * {
   padding: 0;
@@ -28,7 +26,9 @@ Table of Contents
 body {
   font-family: "Times New Roman", Times, serif;
 }
-
+/*========================
+ [01] Navbar
+=========================*/
 .navbar {
   padding: 20px;
   background: var(--primary-color);
@@ -47,36 +47,34 @@ body {
 .navbar .nav-item .nav-link:hover {
   background: var(--secondary-color);
   color: var(--primary-color);
-}
-/*---Navigation Menu---*/
-.nav-menu ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+} 
+.navbar button.navbar-toggler{
+  background-color: var(--secondary-color);
+  border: none;
 }
 ul.navbar-nav li.profile-dropdown {
   margin-left: auto;
   margin-right: 50px;
 }
 /*========================
-slider
+ [02] Home slider
 =========================*/
-.slider {
+.home-slider {
   background: url("../images/bg.PNG");
   height: 600px;
   background-position: center;
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
 }
-.slider h3 {
-  font-size: 3rem;
+.home-slider h3 {
+  font-size: 2.5rem;
   color: var(--general-color);
   margin-top: 15rem;
   margin-left: 5rem;
   font-weight: 700;
 }
 /*=================================
-About Us Page
+[03] About Us Page
 =================================*/
 .history {
   background: url(../images/history-bg.jpg);
@@ -84,7 +82,9 @@ About Us Page
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
 }
-
+.history .container .row{
+  padding: 10px;
+}
 .history .container .row img {
   border-radius: 10px;
 }
@@ -95,14 +95,21 @@ About Us Page
 /*----------------------------
 fonders
 ------------------------------*/
+.founders{
+  background: gray;
+}
+.founders .container h2, h3{
+  color: var(--general-color);
+  font-weight: 500;
+}
 .founders .container .row img {
   border-radius: 50%;
 }
 /*=================================
-Serrvices
+[04] Serrvices Page
 ===================================*/
 .services {
-  background: var(--general-color);
+  background:url(../images/services-bg.jpeg)
 }
 .services h2 {
   color: var(--secondary-color);
@@ -117,11 +124,21 @@ Serrvices
   font-weight: 500;
 }
 .services .container .row .box p {
-  color: var(--primary-color);
+  color: var(--general-color);
   font-weight: 600;
 }
+/*==================================
+[05] Photo-Gallery Page
+===================================*/
+.gallery{
+  background: var(--secondary-color);
+  padding: 80px 0;
+}
+.gallery img{
+  max-width: 100%;
+}
 /*=====================================
-Contact us Page
+[06] Contact us Page
 ======================================*/
 .contact-slider{
   background:var(--general-color);
@@ -142,6 +159,9 @@ contact form
 .contact-form{
   margin-top: 0;
   background: var(--secondary-color);
+}
+.contact-form .container{
+padding: 10px;
 }
 .contact-form .container h3{
   color: var(--primary-color);
@@ -168,19 +188,10 @@ contact form
   color: var(--primary-color);
   font-weight: 600;
 }
-/*==================================
-Photo-Gallery Page
-===================================*/
-.gallery{
-  background: var(--secondary-color);
-  padding: 80px 0;
-}
-.gallery img{
-  max-width: 100%;
-}
+
 
 /*======================
-Footer
+[07] Footer Section
 ========================*/
 .footer {
   background: var(--primary-color);
@@ -244,7 +255,7 @@ Footer
   color: var(--general-color);
 }
 /*===================================
-Media
+ [08] Media
 =====================================*/
 @media (max-width: 575.99px) {
   .slider h3 {
