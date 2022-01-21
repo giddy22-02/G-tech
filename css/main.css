@@ -109,7 +109,10 @@ fonders
 [04] Serrvices Page
 ===================================*/
 .our-services {
-  background:url(../images/services-bg.jpeg)
+  background:url(../images/services-bg.jpeg);
+  background-position: center;
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
 }
 .our-services h2 {
   color: var(--secondary-color);
@@ -140,8 +143,11 @@ fonders
 /*=====================================
 [06] Contact us Page
 ======================================*/
-.contact-slider{
-  background:var(--general-color);
+.contact-slider {
+ background: url(../images/contact-welcome.jpeg);
+  background-position: center;
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
 }
 .contact-slider .container .row h3{
   color: var(--secondary-color);
@@ -156,6 +162,7 @@ fonders
 /*-------------------
 contact form
 --------------------*/
+
 .contact-form{
   margin-top: 0;
   background: var(--secondary-color);
