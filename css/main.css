@@ -169,6 +169,7 @@ padding: 10px;
 }
 .contact-form .container .row .form-control{
   border-radius: 15px;
+  padding: 10px;
 }
 .contact-form .container .row input :focus{
   border: none;
@@ -187,6 +188,10 @@ padding: 10px;
 .contact-form .container .row .container p{
   color: var(--primary-color);
   font-weight: 600;
+}
+.contact-form.btn{
+color:var(--primary-color);
+padding: 10px;
 }
 
 
